@@ -67,6 +67,7 @@ ftpClient.on('ready', () => {
         				}
 
         				const info = {
+                                                lastUpdated: (new Date()).toISOString(),
         					day: forecastPeriod.$['start-time-local'],
         					maxTemp: maxTemp,
         					precipMin: precipMin,
