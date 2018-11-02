@@ -73,6 +73,7 @@ ftpClient.on('ready', () => {
         					precipMin: precipMin,
         					precipMax: precipMax,
         					probabilityOfPrecip: probabilityOfPrecip,
+                                                data: data, // debug
         				}
         				console.log('INFO', JSON.stringify(info));
         				fs.writeFileSync(filePath, JSON.stringify(info));
